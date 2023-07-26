@@ -4,5 +4,6 @@ namespace RoleplaySanctuary.DAL.Repositories
 {
     public class UserRepository : IUserRepository
     {
+
     }
 }
