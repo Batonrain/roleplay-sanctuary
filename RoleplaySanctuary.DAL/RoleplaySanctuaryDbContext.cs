@@ -12,7 +12,7 @@ namespace RoleplaySanctuary.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5433;Database=RoleplaySanctuary;Username=admin;Password=admin");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=RoleplaySanctuary;Username=admin;Password=admin");
         }
 
         public DbSet<User> Users { get; set; }
