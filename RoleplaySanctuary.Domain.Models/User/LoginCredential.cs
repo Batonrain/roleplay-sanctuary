@@ -1,4 +1,4 @@
-﻿namespace RoleplaySanctuary.Domain.User
+﻿namespace RoleplaySanctuary.Domain.Models.User
 {
     public class LoginCredential
     {

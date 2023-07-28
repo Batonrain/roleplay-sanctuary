@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RoleplaySanctuary.Domain\RoleplaySanctuary.Domain.csproj" />
+    <ProjectReference Include="..\RoleplaySanctuary.Domain.Models\RoleplaySanctuary.Domain.Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,6 +3,7 @@ using RoleplaySanctuary;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddAutoMapper(typeof(Program));
 builder.ConfigureServices();
 
 builder.Services.AddControllersWithViews();

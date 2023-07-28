@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RoleplaySanctuary.DAL.Repositories.Interfaces;
-using RoleplaySanctuary.Domain.User;
+using RoleplaySanctuary.Domain.Models.User;
 
 namespace RoleplaySanctuary.DAL.Repositories;
 
@@ -16,6 +16,13 @@ public class UserRepository : IUserRepository
     public async Task<List<User>> GetUsers()
     {
         return await _dbContext.Users.ToListAsync();
+    }
+
+    public async Task<int> SaveUserAsync(User user)
+    {
+        _dbContext.Users.Add(user);
+        await _dbContext.SaveChangesAsync();
+        return user.Id;
     }
 }
 
